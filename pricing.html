@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get a free quote for car wrapping, PPF, window tinting, and vehicle branding services. Fast, transparent pricing.">
+    <title>Get a Quote | Car Wrapping Pricing | WrapPro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html"><span class="logo-text">WRAP<span class="logo-accent">PRO</span></span></a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pricing.html" class="active">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="pricing.html" class="btn btn-primary">Get Quote</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get a Quote</h1>
+            <p>Request a free, no-obligation quote for your vehicle</p>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-wrapper">
+                <div class="quote-form-container">
+                    <div class="form-header">
+                        <h2>Request Your Free Quote</h2>
+                        <p>Fill out the form below and we'll get back to you within 24 hours with a detailed quote.</p>
+                    </div>
+                    <form class="quote-form" id="quoteForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="vehicleType">Vehicle Type *</label>
+                            <select id="vehicleType" name="vehicleType" required>
+                                <option value="">Select Vehicle Type</option>
+                                <option value="sedan">Sedan</option>
+                                <option value="suv">SUV</option>
+                                <option value="bakkie">Bakkie/Pickup</option>
+                                <option value="coupe">Coupe</option>
+                                <option value="hatchback">Hatchback</option>
+                                <option value="van">Van</option>
+                                <option value="truck">Truck</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="vehicleMake">Vehicle Make & Model</label>
+                            <input type="text" id="vehicleMake" name="vehicleMake" placeholder="e.g., BMW 3 Series">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Required *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="full-wrap">Full Car Wrap</option>
+                                <option value="partial-wrap">Partial Wrap</option>
+                                <option value="fleet-branding">Fleet Branding</option>
+                                <option value="ppf">Paint Protection Film (PPF)</option>
+                                <option value="tinting">Window Tinting</option>
+                                <option value="custom-graphics">Custom Graphics</option>
+                                <option value="multiple">Multiple Services</option>
+                                <option value="not-sure">Not Sure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="color">Preferred Color/Finish</label>
+                            <input type="text" id="color" name="color" placeholder="e.g., Matte Black, Gloss Red, Carbon Fiber">
+                        </div>
+                        <div class="form-group">
+                            <label for="timeline">Preferred Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select Timeline</option>
+                                <option value="asap">As Soon As Possible</option>
+                                <option value="1-week">Within 1 Week</option>
+                                <option value="2-weeks">Within 2 Weeks</option>
+                                <option value="1-month">Within 1 Month</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project, any specific requirements, or questions..."></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span>Subscribe to our newsletter for tips and special offers</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large btn-block">Submit Quote Request</button>
+                    </form>
+                </div>
+                <div class="quote-info">
+                    <div class="info-card">
+                        <h3>Why Get a Quote?</h3>
+                        <ul class="info-list">
+                            <li>✓ Free, no-obligation estimates</li>
+                            <li>✓ Transparent pricing</li>
+                            <li>✓ Detailed breakdown of costs</li>
+                            <li>✓ Customized to your vehicle</li>
+                            <li>✓ Valid for 30 days</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h3>Quick Contact</h3>
+                        <div class="contact-methods">
+                            <a href="tel:+27111234567" class="contact-btn">
+                                <span>📞</span>
+                                <div>
+                                    <strong>Call Us</strong>
+                                    <span>+27 11 123 4567</span>
+                                </div>
+                            </a>
+                            <a href="https://wa.me/27111234567?text=Hi,%20I'm%20interested%20in%20getting%20a%20quote" class="contact-btn" target="_blank">
+                                <span>💬</span>
+                                <div>
+                                    <strong>WhatsApp</strong>
+                                    <span>Chat with us</span>
+                                </div>
+                            </a>
+                            <a href="mailto:info@wrappro.co.za" class="contact-btn">
+                                <span>✉️</span>
+                                <div>
+                                    <strong>Email</strong>
+                                    <span>info@wrappro.co.za</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h3>Pricing Guide</h3>
+                        <div class="pricing-guide">
+                            <div class="guide-item">
+                                <strong>Full Car Wrap</strong>
+                                <span>From R15,000</span>
+                            </div>
+                            <div class="guide-item">
+                                <strong>Partial Wrap</strong>
+                                <span>From R5,000</span>
+                            </div>
+                            <div class="guide-item">
+                                <strong>PPF (Full Front)</strong>
+                                <span>From R12,000</span>
+                            </div>
+                            <div class="guide-item">
+                                <strong>Window Tinting</strong>
+                                <span>From R2,500</span>
+                            </div>
+                            <p class="guide-note">*Prices vary based on vehicle size, material choice, and complexity. Contact us for an accurate quote.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does a full wrap take?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most full car wraps are completed within 3-5 business days, depending on the vehicle size and complexity. We'll provide an accurate timeline during your consultation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Will the wrap damage my paint?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, when properly installed and removed, vinyl wraps will not damage your paint. In fact, they protect your original paint from UV rays and minor scratches.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does a wrap last?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Premium wraps typically last 5-7 years with proper care. We provide a 5-year warranty on materials and installation, ensuring your investment is protected.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I wash my wrapped vehicle?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! You can wash your wrapped vehicle normally. We recommend hand washing with mild soap and avoiding high-pressure washers on edges. We provide detailed care instructions with every installation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer financing options?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer flexible payment plans and financing options for qualifying customers. Contact us to discuss available payment options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Submit your quote request or contact us directly for immediate assistance.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">Contact Us</a>
+                    <a href="portfolio.html" class="btn btn-outline btn-large">View Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">WRAP<span class="logo-accent">PRO</span></span>
+                    </div>
+                    <p>Premium vehicle wrapping and branding services across South Africa. Transform. Protect. Stand Out.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><span>📷</span></a>
+                        <a href="#" aria-label="Facebook"><span>📘</span></a>
+                        <a href="#" aria-label="YouTube"><span>▶️</span></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#full-wraps">Full Car Wraps</a></li>
+                        <li><a href="services.html#fleet-branding">Fleet Branding</a></li>
+                        <li><a href="services.html#ppf">Paint Protection</a></li>
+                        <li><a href="services.html#tinting">Window Tinting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📞 +27 11 123 4567</li>
+                        <li>✉️ info@wrappro.co.za</li>
+                        <li>📍 Johannesburg, South Africa</li>
+                        <li>🕒 Mon-Fri: 8AM-6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 WrapPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/27111234567?text=Hi,%20I'm%20interested%20in%20your%20car%20wrapping%20services" class="whatsapp-float" target="_blank" aria-label="Contact us on WhatsApp">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
