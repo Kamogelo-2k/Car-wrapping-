@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your car wrap appointment at WrapPro. Secure your slot with a R250 PayPal booking fee.">
+    <title>Book Appointment | WrapPro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="page-pricing">
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html"><span class="logo-text">WRAP<span class="logo-accent">PRO</span></span></a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pricing.html" class="active">Book</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="pricing.html" class="btn btn-primary">Book Now</a>
+                </div>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header page-header--media" style="--header-image: url('pricing-hero.jpg');">
+        <div class="container">
+            <span class="section-tag">Secure Online</span>
+            <h1>Book Your Appointment</h1>
+            <p>Pay the R250 booking fee with PayPal to secure your installation date</p>
+        </div>
+    </section>
+
+    <section class="pricing-gateway pricing-gateway--booking-only" id="book">
+        <div class="container">
+            <div id="booking-payment-wrapper">
+                <div class="gateway-grid">
+                    <div class="gateway-form-card">
+                        <h2>Appointment Details</h2>
+                        <p class="gateway-lead">Complete the form below, then pay <strong>R250</strong> via PayPal. The fee is non-refundable and credited toward your final invoice.</p>
+                        <p class="gateway-note">Need a price estimate first? <a href="contact.html">Request a quote on our contact page</a>.</p>
+                        <form class="booking-form" id="appointmentForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name *</label>
+                                    <input type="text" id="fullName" name="fullName" required autocomplete="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="bookPhone">Phone *</label>
+                                    <input type="tel" id="bookPhone" name="phone" required autocomplete="tel">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="bookEmail">Email *</label>
+                                <input type="email" id="bookEmail" name="email" required autocomplete="email">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="vMake">Vehicle Make *</label>
+                                    <input type="text" id="vMake" name="vehicleMake" placeholder="e.g. BMW" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="vModel">Model *</label>
+                                    <input type="text" id="vModel" name="vehicleModel" placeholder="e.g. 3 Series" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="vYear">Year *</label>
+                                    <input type="number" id="vYear" name="vehicleYear" min="1990" max="2026" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="wrapType">Wrap / Service *</label>
+                                <select id="wrapType" name="wrapType" required>
+                                    <option value="">Select</option>
+                                    <option value="full-wrap">Full Wrap</option>
+                                    <option value="partial-wrap">Partial Wrap</option>
+                                    <option value="ppf">PPF</option>
+                                    <option value="branding">Branding</option>
+                                    <option value="tinting">Tinting</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="wrapColor">Preferred Colour / Design</label>
+                                <input type="text" id="wrapColor" name="wrapColor" placeholder="e.g. Matte black">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="preferredDate">Preferred Date *</label>
+                                    <input type="date" id="preferredDate" name="preferredDate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="preferredTime">Preferred Time *</label>
+                                    <select id="preferredTime" name="preferredTime" required>
+                                        <option value="">Select</option>
+                                        <option value="08:00">8:00 AM</option>
+                                        <option value="09:00">9:00 AM</option>
+                                        <option value="10:00">10:00 AM</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="12:00">12:00 PM</option>
+                                        <option value="13:00">1:00 PM</option>
+                                        <option value="14:00">2:00 PM</option>
+                                        <option value="15:00">3:00 PM</option>
+                                        <option value="16:00">4:00 PM</option>
+                                        <option value="17:00">5:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="additionalNotes">Additional Notes</label>
+                                <textarea id="additionalNotes" name="additionalNotes" rows="3" placeholder="Any special requirements…"></textarea>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="termsAgreement" required>
+                                    <span>I agree the R250 booking fee is non-refundable and deducted from my final invoice.</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="gateway-side">
+                        <div class="fee-card">
+                            <p class="fee-label">Booking fee</p>
+                            <p class="fee-amount">R250</p>
+                            <p class="fee-note">Secure payment via PayPal</p>
+                            <p id="paypal-notice" class="paypal-notice" role="status"></p>
+                            <div id="paypal-button-container" class="paypal-button-container"></div>
+                            <p class="fee-fine">Pay with PayPal, debit, or credit card. Complete the form and accept terms before paying.</p>
+                        </div>
+                        <div class="gateway-side-image">
+                            <img src="workshop.jpg" alt="WrapPro installation workshop" width="500" height="360" loading="lazy">
+                        </div>
+                        <ul class="gateway-checklist">
+                            <li>Slot confirmed after payment</li>
+                            <li>Fee credited to your invoice</li>
+                            <li>Certified professional installers</li>
+                            <li>We'll call to confirm your date</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="booking-confirmation" id="bookingConfirmation" hidden>
+                <div class="confirmation-icon" aria-hidden="true"></div>
+                <h2>Booking confirmed</h2>
+                <p>Your R250 payment was received. We will contact you shortly to confirm your appointment.</p>
+                <p id="booking-paypal-ref" class="booking-ref" hidden></p>
+                <div class="confirmation-actions">
+                    <a href="index.html" class="btn btn-primary">Back to Home</a>
+                    <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo"><span class="logo-text">WRAP<span class="logo-accent">PRO</span></span></div>
+                    <p>Premium vehicle wrapping across South Africa.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">IG</a>
+                        <a href="#" class="social-link" aria-label="Facebook">FB</a>
+                        <a href="#" class="social-link" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Get a Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><a href="tel:+27111234567">+27 11 123 4567</a></li>
+                        <li><a href="mailto:info@wrappro.co.za">info@wrappro.co.za</a></li>
+                        <li>Johannesburg, South Africa</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 WrapPro. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/27111234567" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
